@@ -30,14 +30,11 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-    background-color: #e8e5f0;
+    background-color: #602c5c;
     color: var(--gray-800);
     line-height: 1.5;
+    min-height: 100vh;
 }
-
-/* ============================================
-   DESKTOP LAYOUT - Top Navigation
-   ============================================ */
 
 .app-container {
     display: none;
@@ -136,7 +133,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #e8e5f0;
+    background-color: #e4e1f0;
 }
 
 .mobile-header {

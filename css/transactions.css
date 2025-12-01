@@ -18,7 +18,7 @@
 /* Search Bar */
 .search-container {
     max-width: 600px;
-    margin: 0 auto 2rem;
+    margin: 0 auto 1.5rem;
     position: relative;
 }
 
@@ -30,6 +30,38 @@
     font-size: 0.875rem;
     background-color: #f9fafb;
     transition: all 0.2s;
+}
+
+/* Send Money Button */
+.send-money-section {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+.send-money-btn {
+    background: linear-gradient(135deg, #2d1b69 0%, #5b21b6 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 4px rgba(91, 33, 182, 0.2);
+}
+
+.send-money-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(91, 33, 182, 0.3);
+}
+
+.send-money-btn svg {
+    width: 1.125rem;
+    height: 1.125rem;
 }
 
 .search-input:focus {
@@ -196,7 +228,7 @@
     .account-balance-card {
         background: linear-gradient(135deg, #2d1b69 0%, #5b21b6 100%);
         color: white;
-        margin: -1rem -1rem 1.5rem;
+        margin: -1rem -1rem 1rem;
         border-radius: 0;
         border: none;
     }
@@ -209,6 +241,19 @@
         color: white;
     }
     
+    .search-container {
+        margin-bottom: 1rem;
+    }
+    
+    .send-money-section {
+        margin-bottom: 1.5rem;
+    }
+    
+    .send-money-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
     .transaction-item {
         background-color: white;
         border: 1px solid #e5e7eb;
@@ -218,7 +263,7 @@
 /* Desktop Specific */
 @media (min-width: 768px) {
     .desktop-main-content {
-        background-color: #f9fafb;
+        background-color: white;
         padding: 0;
     }
     

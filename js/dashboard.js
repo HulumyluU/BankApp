@@ -78,10 +78,7 @@ function generateAccountsContent() {
                 </div>
                 <div class="account-progress-bar"></div>
                 <div class="account-actions">
-                    <button class="btn-account-action btn-send-money" onclick="window.location.href='transfer.html'">
-                        Send money
-                    </button>
-                    <button class="btn-account-action btn-more">
+                    <button class="btn-account-action btn-more" style="width: 100%;">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="12" r="1"></circle>
                             <circle cx="19" cy="12" r="1"></circle>
@@ -139,7 +136,7 @@ function generateAccountsContent() {
                 Subscriptions
             </div>
             
-            <div class="payments-grid" style="margin-bottom: 1.5rem;">
+            <div class="payments-grid">
                 <div class="payment-card">
                     <div class="payment-header">
                         <div class="payment-icon blue">⭐</div>
@@ -155,13 +152,7 @@ function generateAccountsContent() {
                     <div class="payment-amount">$9.99/month</div>
                     <div class="payment-frequency">Monthly</div>
                 </div>
-            </div>
             
-            <div class="subsection-header" style="font-size: 0.875rem; font-weight: 600; color: #6b7280; margin-bottom: 0.75rem;">
-                Credit Cards
-            </div>
-            
-            <div class="payments-grid">
                 <div class="payment-card">
                     <div class="payment-header">
                         <div class="payment-icon orange">⭐</div>

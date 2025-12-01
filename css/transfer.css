@@ -303,7 +303,7 @@
 /* Desktop Specific */
 @media (min-width: 768px) {
     .desktop-main-content {
-        background-color: #f9fafb;
+        background-color: #e8dff5;
         min-height: calc(100vh - 80px);
     }
     

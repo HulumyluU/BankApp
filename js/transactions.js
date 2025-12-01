@@ -1,5 +1,6 @@
+// ============================================
 // TRANSACTIONS PAGE LOGIC
-
+// ============================================
 
 let activeTab = 'transactions';
 
@@ -27,7 +28,12 @@ function generateTransactionsHTML() {
     
     return `
         <div class="page-title-section">
-            <h1 class="page-title">Banking</h1>
+            <h1 class="page-title">Transactions</h1>
+        </div>
+        
+        <div class="account-balance-card">
+            <p class="account-name-label">${account.name}</p>
+            <h2 class="account-balance-amount">${formatCurrency(account.balance)}</h2>
         </div>
         
         <div class="search-container">
@@ -38,9 +44,14 @@ function generateTransactionsHTML() {
             <input type="text" class="search-input" placeholder="Search">
         </div>
         
-        <div class="account-balance-card">
-            <p class="account-name-label">${account.name}</p>
-            <h2 class="account-balance-amount">${formatCurrency(account.balance)}</h2>
+        <div class="send-money-section">
+            <button class="send-money-btn" onclick="window.location.href='transfer.html'">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Send Money
+            </button>
         </div>
         
         <div class="transaction-tabs">

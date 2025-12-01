@@ -271,4 +271,8 @@
         margin: 2rem auto;
         height: calc(100vh - 160px);
     }
+    
+    .chat-desktop-main {
+        background-color: #e4e1f0 !important;
+    }
 }
