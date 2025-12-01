@@ -1,0 +1,300 @@
+/* ============================================
+   INVESTMENTS PAGE STYLES
+   ============================================ */
+
+.spending-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.5rem;
+}
+
+.spending-card h3 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--gray-600);
+    margin-bottom: 1rem;
+}
+
+.spending-title {
+    font-size: 0.75rem;
+    color: var(--gray-500);
+    margin-bottom: 0.25rem;
+}
+
+.spending-amount {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: var(--gray-800);
+    margin-bottom: 1rem;
+}
+
+.spending-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.spending-item {
+    background: linear-gradient(135deg, #eff6ff 0%, #f3f4f6 100%);
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+}
+
+.spending-item.purple {
+    background: linear-gradient(135deg, #f3e8ff 0%, #fae8ff 100%);
+}
+
+.spending-item p {
+    font-size: 0.75rem;
+    color: var(--gray-600);
+    margin-bottom: 0.25rem;
+}
+
+.spending-item h4 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--gray-800);
+}
+
+/* Portfolio Chart */
+.portfolio-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.portfolio-header h3 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--gray-800);
+}
+
+.period-select {
+    font-size: 0.875rem;
+    border: 1px solid var(--gray-300);
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background-color: white;
+    color: var(--gray-700);
+    cursor: pointer;
+}
+
+.period-select:focus {
+    outline: none;
+    border-color: var(--purple-600);
+}
+
+.portfolio-balance {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: var(--gray-800);
+    margin-bottom: 1.5rem;
+}
+
+.chart-container {
+    position: relative;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.donut-chart {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+}
+
+.chart-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.chart-center-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--gray-800);
+}
+
+.chart-center-label {
+    font-size: 0.75rem;
+    color: var(--gray-500);
+}
+
+/* Trending Stocks */
+.trending-stocks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.stock-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.stock-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.stock-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.stock-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray-800);
+}
+
+.star-icon {
+    color: #fbbf24;
+    width: 1rem;
+    height: 1rem;
+}
+
+.stock-ticker {
+    font-size: 0.75rem;
+    color: var(--gray-500);
+    margin-bottom: 0.5rem;
+}
+
+.stock-performance {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stock-change {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.stock-change.positive {
+    color: var(--green-600);
+}
+
+.stock-change.negative {
+    color: var(--red-600);
+}
+
+.stock-price {
+    font-size: 0.75rem;
+    color: var(--gray-500);
+}
+
+/* All Investments */
+.investments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.investment-item {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.investment-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+}
+
+.investment-info h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    margin-bottom: 0.25rem;
+}
+
+.investment-details {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    margin-bottom: 0.25rem;
+}
+
+.investment-change {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.investment-change.positive {
+    color: var(--green-600);
+}
+
+.investment-change.negative {
+    color: var(--red-600);
+}
+
+.investment-value {
+    text-align: right;
+}
+
+.investment-total {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--gray-800);
+    margin-bottom: 0.25rem;
+}
+
+.investment-price {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .trending-stocks-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .spending-amount {
+        font-size: 1.5rem;
+    }
+    
+    .portfolio-balance {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .trending-stocks-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .spending-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

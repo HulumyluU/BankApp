@@ -1,0 +1,313 @@
+/* ============================================
+   TRANSFER PAGE STYLES
+   ============================================ */
+
+/* Page Layout */
+.transfer-page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.transfer-page-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Transfer Form */
+.transfer-form-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+/* Amount Input */
+.amount-input-container {
+    position: relative;
+}
+
+.currency-symbol {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.amount-input {
+    width: 100%;
+    padding: 0.875rem 1rem 0.875rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    background-color: #f9fafb;
+    transition: all 0.2s;
+    color: #1f2937;
+}
+
+.amount-input:focus {
+    outline: none;
+    border-color: #5b21b6;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(91, 33, 182, 0.1);
+}
+
+.available-balance {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
+
+/* Select Input */
+.select-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    background-color: #f9fafb;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #1f2937;
+}
+
+.select-input:focus {
+    outline: none;
+    border-color: #5b21b6;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(91, 33, 182, 0.1);
+}
+
+/* Text Input */
+.text-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    background-color: #f9fafb;
+    transition: all 0.2s;
+    color: #1f2937;
+}
+
+.text-input:focus {
+    outline: none;
+    border-color: #5b21b6;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(91, 33, 182, 0.1);
+}
+
+/* Security Notice */
+.security-notice {
+    font-size: 0.75rem;
+    color: #6b7280;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    background-color: #f9fafb;
+    border-radius: 0.375rem;
+    border-left: 3px solid #5b21b6;
+}
+
+/* Textarea */
+.textarea-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    background-color: #f9fafb;
+    resize: vertical;
+    font-family: inherit;
+    transition: all 0.2s;
+    color: #1f2937;
+    min-height: 100px;
+}
+
+.textarea-input:focus {
+    outline: none;
+    border-color: #5b21b6;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(91, 33, 182, 0.1);
+}
+
+/* Submit Button */
+.submit-button {
+    width: 100%;
+    background: linear-gradient(135deg, #2d1b69 0%, #5b21b6 100%);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    box-shadow: 0 4px 6px rgba(91, 33, 182, 0.2);
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(91, 33, 182, 0.3);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+.submit-button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Success Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 1rem;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    max-width: 28rem;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.modal-icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #16a34a, #10b981);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.modal-icon svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.modal-message {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.modal-close-btn {
+    background: linear-gradient(135deg, #2d1b69 0%, #5b21b6 100%);
+    color: white;
+    padding: 0.875rem 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1rem;
+}
+
+.modal-close-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(91, 33, 182, 0.3);
+}
+
+/* Mobile Specific */
+@media (max-width: 767px) {
+    .transfer-page-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .transfer-page-title {
+        display: none; /* Title shown in mobile header */
+    }
+    
+    .transfer-form-card {
+        padding: 1.5rem;
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
+    
+    .mobile-content {
+        background-color: white;
+        padding: 0;
+    }
+    
+    .amount-input {
+        font-size: 1.25rem;
+    }
+}
+
+/* Desktop Specific */
+@media (min-width: 768px) {
+    .desktop-main-content {
+        background-color: #f9fafb;
+        min-height: calc(100vh - 80px);
+    }
+    
+    .transfer-page-container {
+        padding-top: 3rem;
+    }
+}

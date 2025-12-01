@@ -1,0 +1,235 @@
+/* ============================================
+   TRANSACTIONS PAGE STYLES
+   ============================================ */
+
+/* Page Title */
+.page-title-section {
+    text-align: center;
+    padding: 2rem 0 1.5rem;
+}
+
+.page-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+/* Search Bar */
+.search-container {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    background-color: #f9fafb;
+    transition: all 0.2s;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #5b21b6;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(91, 33, 182, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.875rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    pointer-events: none;
+}
+
+/* Account Balance Card */
+.account-balance-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.account-name-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.account-balance-amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+/* Tabs */
+.transaction-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    background: transparent;
+    border: none;
+    color: #6b7280;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    font-size: 0.9375rem;
+}
+
+.tab-btn:hover {
+    color: #374151;
+}
+
+.tab-btn.active {
+    color: #1f2937;
+    border-bottom-color: #1f2937;
+    font-weight: 600;
+}
+
+/* Transaction List */
+.transaction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.transaction-date-group {
+    margin-bottom: 1.5rem;
+}
+
+.date-header {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #9ca3af;
+    padding: 0.75rem 0 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.transaction-item {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0;
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s;
+    border-bottom: none;
+}
+
+.transaction-item:first-of-type {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.transaction-item:last-of-type {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.transaction-item:hover {
+    background-color: #f3f4f6;
+}
+
+.transaction-info {
+    flex: 1;
+}
+
+.transaction-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0;
+}
+
+.transaction-amount {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+.transaction-amount.positive {
+    color: #16a34a;
+}
+
+.transaction-amount.negative {
+    color: #1f2937;
+}
+
+/* Desktop Layout */
+.transactions-desktop-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Mobile Specific */
+@media (max-width: 767px) {
+    .mobile-content {
+        background-color: white;
+        padding: 1rem;
+    }
+    
+    .page-title-section {
+        display: none;
+    }
+    
+    .account-balance-card {
+        background: linear-gradient(135deg, #2d1b69 0%, #5b21b6 100%);
+        color: white;
+        margin: -1rem -1rem 1.5rem;
+        border-radius: 0;
+        border: none;
+    }
+    
+    .account-name-label {
+        color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .account-balance-amount {
+        color: white;
+    }
+    
+    .transaction-item {
+        background-color: white;
+        border: 1px solid #e5e7eb;
+    }
+}
+
+/* Desktop Specific */
+@media (min-width: 768px) {
+    .desktop-main-content {
+        background-color: #f9fafb;
+        padding: 0;
+    }
+    
+    .transactions-desktop-container {
+        background-color: white;
+        min-height: calc(100vh - 80px);
+    }
+    
+    .account-balance-card {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

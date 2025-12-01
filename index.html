@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLBank - Sign In</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+<body class="signin-page">
+    <div class="signin-container">
+        <div class="signin-card">
+            <div class="logo-container">
+                <div class="logo">LL</div>
+            </div>
+            
+            <div class="signin-form">
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username or Access Card" class="form-input">
+                </div>
+                
+                <div class="form-group password-group">
+                    <input type="password" id="password" placeholder="Password" class="form-input">
+                    <button type="button" class="toggle-password" id="togglePassword">
+                        <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </button>
+                </div>
+                
+                <button type="button" class="forgot-password">Forgot password?</button>
+                
+                <button type="button" class="btn-login" id="loginBtn">Log in</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
